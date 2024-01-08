@@ -47,8 +47,15 @@ ul {
 a, .text {
     color: #E5E7EB;
     font-size: 18px;
-    text-decoration: none;
   }
+
+a {
+    text-decoration: none;
+}
+
+.info .text {
+    margin-bottom: 24px;
+}
 
 .logo {
     height: auto;
@@ -85,10 +92,6 @@ a, .text {
     margin-bottom: 8px;
 }
 
-.text {
-    margin-bottom: 24px;
-}
-
 button {
     border: none;
     border-radius: 8px;
@@ -114,7 +117,54 @@ button {
     flex: 1;
 } */
 
-.one,
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px 260px 120px;
+    gap: 24px;
+}
+
+.hobbies {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+
+.hobbies-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.hobby-img {
+    width: 180px;
+    height: 180px;
+    border: 4px solid #3882F6;
+    border-radius: 10px;
+}
+
+.hobbies div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.hobbies div p {
+    color: #1F2937;
+    margin: 0;
+    max-width: 180px;
+    text-align: center;
+    
+}
+
+
+
 .two {
     padding: 120px 260px;
 
@@ -124,9 +174,6 @@ button {
     align-items: center;
 }
 
-.one {
-
-}
 .two {
     background-color: #E5E7EB;
 }
