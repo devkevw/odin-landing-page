@@ -84,6 +84,10 @@ a {
     /* overflow: hidden; */
 }
 
+h1 {
+    margin: 0;
+}
+
 .title {
     font-weight: 700;
     font-size: 48px;
@@ -92,7 +96,7 @@ a {
     margin-bottom: 8px;
 }
 
-button {
+.sign {
     border: none;
     border-radius: 8px;
     background: #3882F6;
@@ -102,7 +106,15 @@ button {
     font-weight: 700;
     font-size: 18px;
     max-width: 120px;
+
+    cursor: pointer;
+    
   }
+
+  .sign:hover {
+    background-color: #2E72C6; /* New background color when hovering */
+    transition: background-color 0.3s ease;
+}
 
 .intro-img{
     height: auto;
@@ -113,9 +125,9 @@ button {
 /* ************** */
 /* middle section */
 /* ************** */
-/* .middle {
+.middle {
     flex: 1;
-} */
+}
 
 .one {
     display: flex;
@@ -131,6 +143,8 @@ button {
     display: flex;
     gap: 48px;
     justify-content: center;
+
+    flex-wrap: wrap;
 }
 
 .hobbies-title {
@@ -163,8 +177,6 @@ button {
     
 }
 
-
-
 .two {
     padding: 120px 260px;
 
@@ -172,9 +184,6 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.two {
     background-color: #E5E7EB;
 }
 
@@ -194,4 +203,56 @@ button {
     font-weight: 700;
 }
 
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    padding: 120px 200px;
+}
+
+.box {
+    display: flex;
+    background-color: #3882F6;
+    width: 100%; 
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 44px 100px;
+    border: none;
+    border-radius: 8px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 4px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.news-title {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.box .sign {
+    border: 1.5px solid #F9FAF8;
+}
+
+/* ****** */
+/* footer */
+/* ****** */
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+}
