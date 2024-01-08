@@ -11,15 +11,19 @@ body {
     margin: 0;
 }
 
+.intro,
+.three {
+    padding: 24px 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+
 /* *********** */
 /* top section */
 /* *********** */
 .intro {
-    display: flex;
-    flex-direction: column;
     background-color: #1F2937 ;
-
-    padding: 24px 200px;
 }
 
 /* header */
@@ -74,10 +78,9 @@ a, .text {
 }
 
 .title {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 48px;
     color: #F9FAF8;
-    font-family: 'Arial';
 
     margin-bottom: 8px;
 }
@@ -93,8 +96,7 @@ button {
     color: #F9FAF8;
     padding: 8px 24px;
 
-    font-family: 'Arial';
-    font-weight: 900;
+    font-weight: 700;
     font-size: 18px;
     max-width: 120px;
   }
@@ -104,4 +106,45 @@ button {
     width: 500px;
 
 }
+
+/* ************** */
+/* middle section */
+/* ************** */
+/* .middle {
+    flex: 1;
+} */
+
+.one,
+.two {
+    padding: 120px 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+
+}
+.two {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 300;
+
+}
+
+.author {
+    margin-left: auto;
+
+    color: #1F2937;
+    font-size: 22px;
+    font-weight: 700;
+}
+
 
